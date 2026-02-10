@@ -57,16 +57,21 @@ header {
     min-height: 10rem;
     background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
 
-    /* Template for background image. 50% transparency on left and 0 on right via https://onlinepngtools.com/change-png-opacity */
-
-    background-image: url(images/homefarmbg.png);
-    backdrop-filter: blur(30px); /* Adjust the pixel value */
     padding: 1rem;
     
     background-size: cover;
     background-position: center 65%;
 
     color: white;
+}
+
+header h1 {
+    margin-top: 3rem;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: .2rem .5rem 0rem #000;
 }
 
 main {
@@ -78,8 +83,29 @@ main {
 footer {
     background-color: var(--secondary-color);
     color: white;
-    text-align: center;
     padding: 1rem;
     position: relative;
     bottom: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+#social-links {
+    display: flex;
+    flex-flow: row wrap;
+    width: clamp(30vh, 15vw, 16vw);
+    margin: auto;
+}
+
+#social-links li {
+    flex: 1;
+    list-style: none;
+}
+
+
+#social-links img {
+    height: 6vh
+
 }
