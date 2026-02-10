@@ -1,0 +1,85 @@
+:root {
+
+    --primary-color: rgb(226, 110, 43);
+    --secondary-color: #b41e1b;
+    --tertiary-color: #d9432f;
+
+}
+
+* {
+    font-family: 'Chelsea Market', sans-serif;
+}
+
+body {
+    background-color: var(--tertiary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+nav {
+    margin-top: 0rem;
+
+    position: sticky;
+    top: 0; /* The point in the viewport where the element sticks */
+    z-index: 10;
+
+    background-color: var(--primary-color);
+    color: white;
+    padding: .4rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul li {
+    flex: 1.4;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.navspacewaster {
+    flex: 4;
+}
+
+header {
+    min-height: 10rem;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+
+    /* Template for background image. 50% transparency on left and 0 on right via https://onlinepngtools.com/change-png-opacity */
+
+    background-image: url(images/homefarmbg.png);
+    backdrop-filter: blur(30px); /* Adjust the pixel value */
+    padding: 1rem;
+    
+    background-size: cover;
+    background-position: center 65%;
+
+    color: white;
+}
+
+main {
+    background-color: whitesmoke;
+    
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
